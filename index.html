@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SafeNexa AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <div class="logo">
+            🛡️ SafeNexa AI
+        </div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#sos">Emergency SOS</a>
+            <a href="#assistant">AI Assistant</a>
+            <a href="#contacts">Contacts</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+                SafeNexa AI
+            </h1>
+
+            <h2>
+                Intelligent Safety & Emergency Support System
+            </h2>
+
+            <p>
+                AI-powered safety assistance for emergency situations,
+                location support and trusted contacts.
+            </p>
+
+            <button class="sos-button" onclick="activateSOS()">
+                🚨 EMERGENCY SOS
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Emergency Section -->
+    <section id="sos" class="section">
+
+        <h2>🚨 Emergency Support</h2>
+
+        <p>
+            In an emergency, use the SOS button to activate
+            SafeNexa safety support.
+        </p>
+
+        <button class="primary-button" onclick="getLocation()">
+            📍 Share My Location
+        </button>
+
+        <p id="locationStatus">
+            Location not shared yet.
+        </p>
+
+    </section>
+
+
+    <!-- AI Assistant -->
+    <section id="assistant" class="section">
+
+        <h2>🤖 SafeNexa AI Assistant</h2>
+
+        <div class="chat-box">
+
+            <div id="chatArea" class="chat-area">
+
+                <div class="ai-message">
+                    Hello! I am SafeNexa AI.
+                    How can I help you with your safety?
+                </div>
+
+            </div>
+
+            <div class="chat-input">
+
+                <input
+                    type="text"
+                    id="userInput"
+                    placeholder="Describe your emergency..."
+                >
+
+                <button onclick="sendMessage()">
+                    Send
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Emergency Contacts -->
+    <section id="contacts" class="section">
+
+        <h2>👥 Trusted Emergency Contacts</h2>
+
+        <div class="contact-card">
+
+            <input
+                type="text"
+                id="contactName"
+                placeholder="Contact Name"
+            >
+
+            <input
+                type="tel"
+                id="contactNumber"
+                placeholder="Contact Number"
+            >
+
+            <button
+                class="primary-button"
+                onclick="saveContact()">
+                Save Contact
+            </button>
+
+        </div>
+
+        <div id="contactList"></div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 SafeNexa AI | Intelligent Safety & Emergency Support System
+        </p>
+
+        <p>
+            In a real emergency, contact your local emergency services.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
